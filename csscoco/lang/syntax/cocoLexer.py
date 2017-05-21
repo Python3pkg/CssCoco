@@ -202,16 +202,16 @@ class cocoLexer(Lexer):
     LineComment = 40
     WS = 41
 
-    modeNames = [ u"DEFAULT_MODE" ]
+    modeNames = [ "DEFAULT_MODE" ]
 
-    literalNames = [ u"<INVALID>",
+    literalNames = [ "<INVALID>",
             "'{'", "'}'", "'forbid'", "'message'", "'require'", "'find'", 
             "'where'", "'in'", "'('", "','", "')'", "'='", "'not'", "'and'", 
             "'or'", "'is'", "'before'", "'after'", "'between'", "'-'", "'<'", 
             "'>'", "'<='", "'>='", "'=='", "'!='", "'not in'", "'match'", 
             "'not match'", "'.'", "'ignore'", "'['", "']'" ]
 
-    symbolicNames = [ u"<INVALID>",
+    symbolicNames = [ "<INVALID>",
             "Boolean", "Identifier", "Integer", "Decimal", "String", "Comment", 
             "LineComment", "WS" ]
 

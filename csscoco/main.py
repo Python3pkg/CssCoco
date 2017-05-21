@@ -72,12 +72,12 @@ def main():
     coco_ast = output
     errors = checker.TypeChecker.check(coco_ast)
     if errors.contain_errors():
-        print(errors.string())
+        print((errors.string()))
         exit()
 
     successful, output = violations.ViolationsFinder.find(coco_ast, css_tree)
-    print(output.to_string())
+    print((output.to_string()))
     exit()
 
-print(main())
+print((main()))
 

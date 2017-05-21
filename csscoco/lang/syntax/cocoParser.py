@@ -7,7 +7,7 @@ ischild = len(package)>0 if package is not None else False
 if ischild:
     from .cocoVisitor import cocoVisitor
 else:
-    from cocoVisitor import cocoVisitor
+    from .cocoVisitor import cocoVisitor
 
 def serializedATN():
     with StringIO() as buf:
@@ -162,25 +162,25 @@ class cocoParser ( Parser ):
 
     sharedContextCache = PredictionContextCache()
 
-    literalNames = [ u"<INVALID>", u"'{'", u"'}'", u"'forbid'", u"'message'", 
-                     u"'require'", u"'find'", u"'where'", u"'in'", u"'('", 
-                     u"','", u"')'", u"'='", u"'not'", u"'and'", u"'or'", 
-                     u"'is'", u"'before'", u"'after'", u"'between'", u"'-'", 
-                     u"'<'", u"'>'", u"'<='", u"'>='", u"'=='", u"'!='", 
-                     u"'not in'", u"'match'", u"'not match'", u"'.'", u"'ignore'", 
-                     u"'['", u"']'" ]
+    literalNames = [ "<INVALID>", "'{'", "'}'", "'forbid'", "'message'", 
+                     "'require'", "'find'", "'where'", "'in'", "'('", 
+                     "','", "')'", "'='", "'not'", "'and'", "'or'", 
+                     "'is'", "'before'", "'after'", "'between'", "'-'", 
+                     "'<'", "'>'", "'<='", "'>='", "'=='", "'!='", 
+                     "'not in'", "'match'", "'not match'", "'.'", "'ignore'", 
+                     "'['", "']'" ]
 
-    symbolicNames = [ u"<INVALID>", u"<INVALID>", u"<INVALID>", u"<INVALID>", 
-                      u"<INVALID>", u"<INVALID>", u"<INVALID>", u"<INVALID>", 
-                      u"<INVALID>", u"<INVALID>", u"<INVALID>", u"<INVALID>", 
-                      u"<INVALID>", u"<INVALID>", u"<INVALID>", u"<INVALID>", 
-                      u"<INVALID>", u"<INVALID>", u"<INVALID>", u"<INVALID>", 
-                      u"<INVALID>", u"<INVALID>", u"<INVALID>", u"<INVALID>", 
-                      u"<INVALID>", u"<INVALID>", u"<INVALID>", u"<INVALID>", 
-                      u"<INVALID>", u"<INVALID>", u"<INVALID>", u"<INVALID>", 
-                      u"<INVALID>", u"<INVALID>", u"Boolean", u"Identifier", 
-                      u"Integer", u"Decimal", u"String", u"Comment", u"LineComment", 
-                      u"WS" ]
+    symbolicNames = [ "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "<INVALID>", "<INVALID>", 
+                      "<INVALID>", "<INVALID>", "Boolean", "Identifier", 
+                      "Integer", "Decimal", "String", "Comment", "LineComment", 
+                      "WS" ]
 
     RULE_stylesheet = 0
     RULE_context = 1
